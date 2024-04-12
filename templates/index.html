@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YuviKiruthi</title>
+    
+    <!-- Link to Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    
+    <!-- Embedded CSS -->
+    <style>
+        h1 {
+            font-size: 70px;
+            font-family: "Sigmar One";
+            color: greenyellow;
+        }
+
+        p {
+            font-family: Papyrus, fantasy;
+            font-size: 25px;
+            letter-spacing: 8px;
+            text-shadow: 2px 2px blue;
+        }
+
+        body {
+            background-image: url('static/bg.jpg'); /* Updated background image path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0; /* Remove default margin */
+        }
+
+        .top {
+            display: flex;
+            flex-wrap: wrap; /* Wrap items to next line */
+            justify-content: space-between; /* Spread items horizontally */
+            align-items: center; /* Center items vertically */
+            padding: 10px 20px; /* Added padding */
+        }
+
+        ul {
+            list-style-type: none; /* Remove bullet points */
+            display: flex;
+            gap: 80px; /* Reduce gap between items */
+            font-size: 25px;
+            align-items: center;
+            margin: 0; /* Remove default margin */
+        }
+
+        ul a:link, ul a:visited {
+            color: whitesmoke;
+            text-decoration: none;
+        }
+
+        ul a:hover, ul a:active {
+            background-color: rgb(158, 118, 108);
+        }
+
+        .quote {
+            text-align: center; /* Center align text */
+            padding: 20px;
+        }
+
+        .quote h1 {
+            font-size: 50px; /* Reduce font size for smaller screens */
+        }
+
+        .quote p {
+            font-size: 18px; /* Reduce font size for smaller screens */
+            letter-spacing: 4px; /* Reduce letter spacing for smaller screens */
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: row; /* Arrange buttons vertically */
+            align-items: center; /* Center align buttons horizontally */
+            margin-top: 20px; /* Add margin-top */
+            justify-content: center;
+            gap: 50px;;
+        }
+
+        .buttons button {
+            background-color: darkgreen;
+            color: whitesmoke;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 10px; /* Add margin-bottom between buttons */
+        }
+
+        .buttons button:hover, .buttons button:active {
+            background-color: darkolivegreen;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .top {
+                flex-direction: column; /* Arrange items vertically on small screens */
+                gap: 10px; /* Reduce gap between items */
+            }
+
+            ul {
+                justify-content: center; /* Center align navigation links */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="top">
+            <img src="static/yk logo.png" alt="Your Logo" width="80" height="100"> <!-- Updated logo image path -->
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about-us">About-us</a></li>
+            </ul>
+        </div> 
+        <div class="quote">
+            <h1>PASIYAARU<br><p> Wasting Food <br>Is Like Stealing From The Poor</p></h1>
+        </div>
+        <div class="buttons">
+            <button onclick="openLink()">HELPER</button>
+            <button onclick="redirectToHome()">DONAR</button>
+        </div>
+    </div>
+    
+    <script>
+        function openLink() {
+            window.open("https://forms.gle/hrbzisaUuCkWSa9B8", "_blank");
+        }
+
+        function redirectToHome() {
+            window.location.href = "/home"; // Assuming home.html is in the root directory
+        }
+    </script>
+   
+</body>
+</html>

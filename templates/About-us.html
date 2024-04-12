@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #84e2ee, #c28ebf);
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .top {
+            display: flex;
+            gap: 10px; /* Changed from 850px to 10px for mobile responsiveness */
+            justify-content: space-between; /* Added to space out the logo and menu */
+            padding: 10px; /* Added padding for better spacing */
+        }
+
+        li {
+            display: inline;
+            color: bisque;
+        }
+
+        ul {
+            display: inline;
+            display: flex;
+            gap: 10px; /* Changed from 60px to 10px for mobile responsiveness */
+            font-size: 25px;
+            align-items: center;
+            margin: 0; /* Added to remove default margin */
+            padding: 0; /* Added to remove default padding */
+        }
+
+        ul a:link,
+        a:visited {
+            background-color: none;
+            color: whitesmoke;
+            padding: 10px 15px; /* Changed from 14px 25px for mobile responsiveness */
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        ul a:hover,
+        a:active {
+            background-color: rgb(198, 132, 211);
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px; /* Added padding for better spacing */
+        }
+
+        .Image {
+            display: flex;
+            flex-direction: row; /* Changed to row to place the image to the right */
+            align-items: center;
+            justify-content: center; /* Added to center content */
+            padding: 10px; /* Added padding for better spacing */
+            line-height: 1.8;
+            color: brown;
+            font-size: 20px;
+        }
+
+        img {
+            max-width: 100%; /* Added to ensure images don't overflow on mobile */
+            height: auto; /* Added to maintain image aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="top">
+            <img src="static/yk logo.png" alt="Your Logo" width="80" height="100">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about-us">About-us</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="Image">
+                <div class="content-text">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque cum, nihil inventore quas, tenetur quibusdam deleniti natus illo sapiente aut hic delectus cumque ad. Illum, aliquid. Temporibus, dolore voluptatum ipsa eius quod voluptas at magnam dolorum excepturi? Consequuntur, nisi! Accusantium ea voluptatibus iusto hic beatae laboriosam, unde id maiores iure praesentium amet officiis possimus, nemo numquam rerum dignissimos tempore magni error asperiores dolore ratione earum reprehenderit labore distinctio. Quasi molestiae mollitia dolorem beatae corporis at veritatis odio ipsam temporibus numquam.</p>
+                </div>
+                <img src="static/man.png" alt="About-Us" width="200" height="300">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
