@@ -39,12 +39,6 @@ then by running the following command, it will host this page in your local port
 python app.py
 ``` 
 
-## Deployement on Heroku
-Vist <a href="Deployement on Heroku">here</a> for details.
-
-## Directory tree
-------
-
 
 ## Technologies Used
 <img target="_blank" src="https://blog.keras.io/img/keras-tensorflow-logo.jpg" width=400>
